@@ -25,3 +25,13 @@ class HttpUtils:
         res = res_data.read()
         return res
 
+
+# the main!
+def main():
+    if __name__ == "__main__":
+        domain = "oasisauth.h3c.com"
+        url = "http://oasisauth.h3c.com/portal"
+        response = HttpUtils.do_get(url, domain)
+        print response.status
+
+main()
